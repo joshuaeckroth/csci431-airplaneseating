@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plannerBenchmark>
+    <warmUpSecondsSpentLimit>60</warmUpSecondsSpentLimit>
+    <benchmarkDirectory>benchmark</benchmarkDirectory>
+    <inheritedSolverBenchmark>
+        <solver>
+            <scanAnnotatedClasses>
+                <packageInclude>csci431.airplaneseating</packageInclude>
+            </scanAnnotatedClasses>
+            <scoreDirectorFactory>
+                <easyScoreCalculatorClass>csci431.airplaneseating.Scorer</easyScoreCalculatorClass>
+            </scoreDirectorFactory>
+            <termination>
+                <secondsSpentLimit>10</secondsSpentLimit>
+            </termination>
+        </solver>
+    </inheritedSolverBenchmark>
+
+    <solverBenchmarkBluePrint>
+        <solverBenchmarkBluePrintType>EVERY_CONSTRUCTION_HEURISTIC_TYPE_WITH_EVERY_LOCAL_SEARCH_TYPE</solverBenchmarkBluePrintType>
+    </solverBenchmarkBluePrint>
+</plannerBenchmark>
